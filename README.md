@@ -3,7 +3,6 @@
 PHP script to cache your php files (or other stuff).
 
 ## How to:
----
 
 How to cache PHP files:
 ```php
@@ -60,10 +59,9 @@ Cacher::clear();
 ```
 
 ## How it works:
----
 
 **Cacher::init** creates a directory (called cache by default). Whenever you use **Cacher::set** or **Cacher::set_func**, it caches the result, unless it already exists. Using **Cacher::get** or **Cacher::echo** outputs the cached file or empty string if it doesn't exist. **Cacher::remove** removes specific cache, **Cacher::clear** removes all of it.
 
 ## My file doesn't cache!
----
+
 Watch out for relative file paths. When you try caching file with a wrong path, it is simply ignored.
